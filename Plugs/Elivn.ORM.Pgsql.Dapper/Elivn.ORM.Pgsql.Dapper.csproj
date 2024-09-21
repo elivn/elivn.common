@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <Authors></Authors>
+    <Description>Pgsql的Dapper扩展(回滚Common对netcore2.2的依赖)</Description>
+    <Version>1.0.0.5</Version>
+    <PackageReleaseNotes></PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>\Elivn.ORM.Pgsql.Dapper.xml</DocumentationFile>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="Kasca.Common" Version="0.0.0.5" />
+    <PackageReference Include="Npgsql" Version="4.1.5" />
+  </ItemGroup>
+
+</Project>
